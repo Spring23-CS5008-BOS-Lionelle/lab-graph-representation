@@ -1,22 +1,15 @@
-# HW README
+# Lab: Graph Representation - a Look at Adjacency Lists and Adjacency Matrices
 
-Name:
+In this lab, we will explore the two most common ways to represent a graph: adjacency lists and adjacency matrices. We will also look at the pros and cons of each representation.
 
-Github Account name: 
+## Provided Files
 
-How many hours did it take you to complete this assignment (estimate)? 
-
-Did you collaborate with any other students/TAs/Professors? If so, tell us who and in what capacity.  
-- one per row, add more if needed
+## 📝 Instructions
 
 
-Did you use any external resources (you do not have to cite in class material)? (Cite them below)  
-- one row per resource
+👉🏽 **Task**
 
 
-(Optional) What was your favorite part of the assignment? 
 
-(Optional) How would you improve the assignment? 
-
-## Questions Answers (change to better heading)
-
+## 📚 Resources
+Use this section to keep the homework description shorter, and instead talk about additional resources down here (such as tools to use, websites to review, etc)
