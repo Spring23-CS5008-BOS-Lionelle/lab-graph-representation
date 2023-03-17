@@ -23,11 +23,7 @@ AdjList * convert_matrix_to_list(AdjMatrix * matrix) {
     for (int i = 0; i < matrix->size; i++) {
         for (int j = 0; j < matrix->size; j++) {
             if (matrix->data[i][j] > 0) {
-                edge_t *edge = malloc(sizeof(edge_t));
-                edge->vertex = j;
-                edge->weight = matrix->data[i][j];
-                edge->next = list->adj_lists[i];
-                list->adj_lists[i] = edge;
+                add_edge(list, i, j, matrix->data[i][j]);
             }
         }
     }
