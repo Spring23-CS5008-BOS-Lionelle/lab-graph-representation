@@ -1,3 +1,7 @@
+
+#include <time.h>
+#include <stdlib.h>
+
 #include "adj_converter.h"
 
 #define DIRECTED_ONE_DIRECTION 0
@@ -6,7 +10,10 @@
 #define MAX_DISTANCE 10
 
 
+
+
 AdjMatrix * buildRandomMatrix(int size, int type) {
+    srand(time(NULL));
     AdjMatrix * matrix = blank_matrix(size);
 
     for (int i = 0; i < matrix->size; i++) {
@@ -41,11 +48,14 @@ AdjMatrix * buildRandomMatrix(int size, int type) {
 
 int main(int argc, char** argv) {
  
- AdjMatrix * matrix = buildRandomMatrix(10, DIRECTED_ONE_DIRECTION);
+    AdjMatrix * matrix = buildRandomMatrix(5, UNDIRECTED);
 
- print_matrix(matrix);
+    print_matrix(matrix);
 
+    AdjList * list = convert_matrix_to_list(matrix);
+    print_graph(list);
+    free_graph(list);
 
- free_matrix(matrix);
+    free_matrix(matrix);
  return 0;
 }
